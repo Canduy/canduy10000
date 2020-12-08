@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="./asset/main.css">
+	<link rel="stylesheet" href="./asset/grid.css">
+	<link rel="stylesheet" href="./asset/reponsive.css">
+	<link rel="stylesheet" href="./asset/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.min.css">
+	<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+</script>
+
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<nav class="header__navbar">
+				<ul class="header__navbar-list">
+					<li class="header__navbar-item">
+						<a href="" class="header__navbar-link">
+							<span>CREVEA Inc.</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="header__navbar-list hide-on-mobile">
+					<li class="header__navbar-item  ">
+						<a href="" class="header__navbar-link header__navbar-item--active">
+							HOME
+						</a>
+					</li>
+					<li class="header__navbar-item">
+						<a href="" class="header__navbar-link">
+							OUR BUSSINESS
+						</a>
+					</li>
+					<li class="header__navbar-item">
+						<a href="" class="header__navbar-link">
+							ABOUT US
+						</a>
+					</li>
+					<li class="header__navbar-item">
+						<a href="" class="header__navbar-link">
+						    NEW
+						</a>
+					</li>
+					<li class="header__navbar-item">
+						<a href="" class="header__navbar-link">
+							CONTACT
+							<i class=" fas fa-search"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			   <label for="nav__input" class="nav__mobile-close">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                </label>
+                <input type="checkbox" hidden class="input" id="nav__input">
+                <label for="nav__input" class="overlay">
+                </label>
+			<nav class="nav__mobile">
+                    <label for="nav__input" class="nav__mobile-closes">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                    </label>
+                    <ul class="nav__mobile-list">
+                        <li>
+                            <a href="" class="nav__mobile-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">OUR BUSSINESS</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">NEW</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__mobile-link">CONTACT
+                            	<i class=" fas fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>       
+		<div class="header__img">
+				    <div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img src="./asset/img/img01.jpg" style="width:100%">
+	                </div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img src="./asset/img/img09.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+					    <div class="numbertext">3 / 3</div>
+					    <img src="./asset/img/img10.jfif" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+		</div>
+		<div class="container">
+			<div class="container__1">
+				<div class="grid wide">
+					<div class="row sm-gutter">
+						<div class="col l-6 m-6 c-12">
+							<span class="text">
+								<h3>ABOUT US</h3>
+	                                 Our goal is "to support and<br> connect educational<br> institutions,companies across the<br> world by providing highly<br> qualified/skilled human resource<br> for mutual development and<br> consulting services in job and<br> skills training". Achieving this, we<br> hope to contribute to the<br> betterment of society.
+	                                 <span class="text2"><br>Our staff are highly experienced and senior members of diverse<br> backgrounds in educational institutions and companies in Vietnam and<br> other territories across the globe. We could provide superior<br> services to our customers.</span>
+							</span>
+						</div>
+						<div class="col l-6 m-6 c-12">
+							<img class="anh1" src="./asset/img/img02.jpg" alt=""  style="width: 100%; height: auto">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container__2">
+				<div class="grid">
+					<div class="row sm-gutter">
+						<div class="col l-6">
+							<div class="img__01">
+								<img src="./asset/img/img03.jpg" alt="" style="">
+							</div>
+						</div>
+						<div class="col l-6">
+							<div class="img__02">
+								<img src="./asset/img/img04.jpg" alt="" style="width: 100%;    height: 485px;">
+							</div>
+						</div>
+						<div class="text03">
+							<h3>Our business</h3>
+							<h2>Education consulting</h2>
+							<span>We offer various services as required from different educational institutions in Vietnam
+							</span>
+							<h2>Education consulting</h2>
+							<span>We offer various services as required from different educational institutions in Vietnam
+							</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="Lastest__News">
+				<div class="grid wide">
+					<h3>News </h3>
+					<h1>Lastest News</h1>
+					<div class="row">
+						<div class="col l-4 m-4 c-12">
+							<div class="content1" >
+								<img src="./asset/img/img05.jpg" alt="" >
+								<h2>Japanese staff agency company visited to Hanoi</h2>
+								<span>Read more </span>
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+						<div class="col l-4 m-4 c-12">
+							<div class="content1" >
+								<img src="./asset/img/img06.jpg" alt="" >
+								<h2>Taiwanese university visited to Hanoi</h2>
+								<span>Read more </span>
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+						<div class="col l-4 m-4 c-12">
+							<div class="content1" >
+								<img src="./asset/img/img07.jpg" alt="" >
+								<h2>We are pleased to announce the renewal of CREVEA Inc. official website.</h2>
+								<span class="text10">We changed the whole design and format to create more efficient and superior experience for our customers once they visit the website. We will continue information. The website in Japanese will come out soon.</span><br><br>
+								<span>Read more </span>
+								<i class="fas fa-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Contact">
+				<div class="grid wide">
+					<div class="row">
+						<div class="col l-6">
+							<div class="Contact__content">
+								<div class="Contact__content1">
+									<h2>Contact</h2>
+									<span class="content1__text">
+										We will connect you with the relevant person in charge. Please<br> click " Send button " after providing your registering input.
+									</span>
+									<div class="content1__box">
+										<div class="content1__box1">
+											<span>Your Name</span>
+										</div>
+										<div class="content1__box1">
+											<span>Your Name</span>
+										</div>
+										<div class="content1__box1">
+											<span>Your Name</span>
+										</div>
+									</div>
+									<div class="content1__input">
+										<input type="text" name="" id="" placeholder="Your message">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col l-6">
+							<div class="Contact__img">
+								<img src="./asset/img/img08.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>	
+		<footer class="footer">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col l-3 m-4 c-6">
+						<ul class="footer__list">
+						    <h2 class="footer__heading">CREVEA</h2>
+						    <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		Add:No 45C, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam
+						    	</a>
+						    </li>
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		TEL: (+84)-989-412-665
+						    	</a>
+						    </li>
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		Email: daisuke.kawashima@crevea.vn
+						    	</a>
+						    </li>
+						</ul>
+					</div>
+					<div class="col l-3 m-4 c-6">
+						<ul class="footer__list">
+						    <h2 class="footer__heading">CATEGORYS</h2>
+						    <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>Home
+						    	</a>
+						    </li>
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>Our bussiness
+						    	</a>
+						    </li>
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>About us
+						    	</a>
+						    </li>
+
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>News
+						    	</a>
+						    </li>
+
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>Contact
+						    	</a>
+						    </li>
+						</ul>
+					</div>
+					<div class="col l-3 m-4 c-6">
+						<ul class="footer__list">
+						    <h2 class="footer__heading">LANGUAGE</h2>
+						    <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>English
+						    	</a>
+						    </li>
+						     <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		>Japanes
+						    	</a>
+						    </li>
+						</ul>
+					</div>
+					<div class="col l-3 m-4 c-6">
+						<ul class="footer__list">
+						    <h2 class="footer__heading">GET OUR NEWS FROM US</h2>
+						    <li class="footer__item">
+						    	<a href="" class="footer__link">
+						    		AdPlease enter the email below to not miss the latest news form us!
+						    	</a>
+						    </li>
+						     <li class="footer__item">
+						    	
+						    		<input type="text" name="" id="" placeholder="Your email enter">
+						    		<input type="submit" value="Sumit">
+						    	
+						    </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__end">
+				<div class="footer__end-text">© 2018 CREVEA Inc.ALL rights Reserved.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
